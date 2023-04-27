@@ -1,0 +1,178 @@
+body {
+    background-color: #f4f4f4;
+    font-family: auto;
+
+}
+footer{
+    margin-top: 50px;
+}
+/*
+.mainContainer{
+    max-width: 576px;
+    margin: auto;
+} */
+a{
+    text-decoration: none;
+}
+img.d-block.w-100 {
+    height: 200px;
+}
+.fixed-footer-bg p {
+    text-align: center;
+    color: rgb(102, 102, 102);
+    font-size: 11px;
+    font-family: auto;
+}
+img.footer-img {
+    width: 30px;
+    height: 24px;
+    text-align: center;
+    background: none;
+}
+.header-text p{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    columns: white;
+}
+
+.fw-bold.p-3.pt-3.text-center {
+    background: #fff;
+    box-shadow: 0 1px 2px #ccc;
+}
+section div p {
+    margin-bottom: 1px;
+    font-size: 13px;
+    font-family: auto;
+    margin-top: 2px;
+}
+
+.title-des {
+    width: 100%;
+    min-height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    font-family: "PingFang SC";
+    color: rgb(51, 51, 51);
+    line-height: 15px;
+}
+.main-bg-absulate {
+    background-image: url(img/earnings.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 30px 0px 0px 0px;
+  /*   height: 202px; */
+}
+.gray{
+    font-size: 12px;
+    font-family: PingFang SC;
+    color: #999;
+    line-height: 15px;
+    margin-bottom: 10px;
+}
+.topp{
+    border-top: 4px solid var(--defaltColor);
+    border-bottom: 1px solid #eee;
+}
+.buttonDetails{
+    width: 90%;
+    font-size: 12px;
+    margin: 0 auto;
+    background: f1f1f1;
+    margin-bottom: 10px;
+    color: #999;
+}
+img.icon {
+    height: 25px;
+    width: 25px;
+}
+
+.recharge-flex{
+    background-color: #f1f1f1;
+
+    justify-content: space-around;
+    display: flex;
+    border: 1px solid var(--defaltColor);
+    font-weight: 700;
+    gap: 5px;
+    padding: 3px;
+}
+.trea-text{
+    font-size: 18px;
+    font-family: PingFang SC;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: -1px -1px 0 #d1392b, 1px -1px 0 #d1392b, -1px 1px 0 #d1392b, 1px 1px 0 #d1392b;
+}
+.trea-text1{
+    font-size: 18px;
+    font-family: Comic Sans MS;
+    font-weight: 700;
+    color: #fff;
+    line-height: 15px;
+    top: 290px;
+    text-align: center;
+}
+.animation{
+    width: 400px;
+    height: 400px;
+    -webkit-animation: your-animation 7s linear infinite;
+    animation: your-animation 7s linear infinite;
+  }
+
+  @keyframes your-animation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .position {
+    position: absolute;
+    margin-top: -389px;
+    margin-left: 190px;
+}
+
+
+
+
+
+
+
+
+/* Table */
+
+.bg-gd {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgb(175 74 0) 0%, rgb(168 69 134) 45%, rgb(194 171 9) 100%);
+}
+
+th {
+    border: 1px solid white;
+    font-size: 14px;
+    text-align: center;
+    padding: 3px;
+    color: black;
+}
+td {
+
+    border: 1px solid white;
+    background: #2661B1;
+    text-align: center;
+    font-size: 10px;
+}
+
+thead {
+    background: #6B5CA1;
+}
+.bg-gdd {
+    background: rgb(19,242,255);
+    background: linear-gradient(180deg, #fff113 0%, rgb(36 205 102) 45%, rgb(255 183 138) 100%);
+
+}
