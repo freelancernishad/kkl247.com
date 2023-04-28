@@ -16,7 +16,7 @@
         </div>
         <div class="bg-white border d-flex mx-4 mb-2 px-3 py-2 shadow">
             <div class="w-100">
-                <span class="bg-white border-0 input-group-text">Bank Code:</span>
+                <span class="bg-white border-0 input-group-text">Bank Name:</span>
             </div>
             <div class="w-100">
                 <select v-model="row.user.Bank_Name" class="form-select border-0" aria-label="Default select example">
@@ -29,7 +29,7 @@
 
         <div class="bg-white border mb-2 mx-4 px-3 py-2 shadow">
             <div class="input-group">
-                <span class="bg-white border-0 input-group-text">Bank Account:</span>
+                <span class="bg-white border-0 input-group-text">Bank Number:</span>
                 <input type="text"  v-model="row.user.Bank_account" aria-label="First name" class="form-control border-0">
               </div>
         </div>
@@ -54,7 +54,7 @@
             <input type="text" v-model="row.user.name" readonly disabled  class="form-control border-0 rounded-0">
         </div>
         <div class="border border-danger input-group mt-2">
-            <span class="bg-white border-0 input-group-text py-3 rounded-0">Account:</span>
+            <span class="bg-white border-0 input-group-text py-3 rounded-0">Bank Number:</span>
             <input type="number"  v-model="row.user.Bank_account" readonly disabled  class="form-control border-0 rounded-0">
         </div>
 
@@ -93,12 +93,14 @@ export default {
 
         var daysName = this.dayName();
 
-        if(daysName=='Friday' ||daysName=='Saturday'){
+        // if(daysName=='Friday' ||daysName=='Saturday'){
 
-        }else{
-            alert('উত্তোলনেন সময় শুক্রবার ও শনিবার')
-             this.$router.push({ name: 'Authuser' });
-        }
+        // }else{
+        //     alert('উত্তোলনেন সময় শুক্রবার ও শনিবার')
+        //      this.$router.push({ name: 'Authuser' });
+        // }
+
+        
 
         // if(User.dateformat()[9]<=15){
         //     if(User.dateformat()[9]>=10){

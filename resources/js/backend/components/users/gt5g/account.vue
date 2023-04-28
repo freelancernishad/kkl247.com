@@ -95,7 +95,7 @@
     <router-link :to="{name:'share'}"  class="mx-3 whiteColor">
                 <!-- <img :src="$asseturl+'img/book.126a5a8e.png'" alt=""> -->
         <i class="fa-regular fa-rectangle-list"></i>
-        <p class="d-inline fw-bold mb-0 ms-1">Share</p>
+        <p class="d-inline fw-bold mb-0 ms-1">Invite</p>
     </router-link>
 </div>
 

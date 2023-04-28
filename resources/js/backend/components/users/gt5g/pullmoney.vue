@@ -15,7 +15,7 @@
         </div>
         <div class="bg-white border d-flex mx-4 mb-2 px-3 py-2 shadow">
             <div class="">
-                <span class="bg-white border-0 input-group-text">Bank Code:</span>
+                <span class="bg-white border-0 input-group-text">Bank Name:</span>
             </div>
             <div class="w-100">
                 <select v-model="row.user.Bank_Name" :disabled="disabaled" class="form-select border-0" aria-label="Default select example">
@@ -28,7 +28,7 @@
 
         <div class="bg-white border mb-2 mx-4 px-3 py-2 shadow">
             <div class="input-group">
-                <span class="bg-white border-0 input-group-text">Bank Account:</span>
+                <span class="bg-white border-0 input-group-text">Bank Number:</span>
                 <input type="number"  v-model="row.user.Bank_account" :disabled="disabaled" aria-label="First name" class="form-control border-0">
               </div>
         </div>

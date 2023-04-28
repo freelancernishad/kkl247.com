@@ -37,7 +37,7 @@
         <div class="d-flex justify-content-around flex-wrap" >
 
 
-        <div class="bg-white px-4 shadow-lg text-center topp" style="width: 46%;margin-top: 25px;">
+        <div class="bg-white px-4 shadow-lg text-center topp" style="width: 96%;margin-top: 25px;">
             <p class="border-bottom fw-bold mb-0 p-2">Level 1</p>
           <div class="border-0 d-flex gap-5 justify-content-between lh-1 mt-3 py-3 text-start topp">
             <div class="w-50 text-start" >
@@ -52,7 +52,7 @@
           <router-link :to="{name:'teamdaily',query:{level:'Level1'}}" class="buttonDetails border-0">More details</router-link>
         </div>
 
-        <div class="bg-white px-4 shadow-lg text-center topp" style="width: 46%;margin-top: 25px;">
+        <div class="bg-white px-4 shadow-lg text-center topp" style="width: 96%;margin-top: 25px;">
             <p class="border-bottom fw-bold mb-0 p-2">Level 2</p>
           <div class="border-0 d-flex gap-5 justify-content-between lh-1 mt-3 py-3 text-start topp">
             <div class="w-50 text-start" >
@@ -67,7 +67,7 @@
           <router-link :to="{name:'teamdaily',query:{level:'Level2'}}" class="buttonDetails border-0">More details</router-link>
         </div>
 
-        <div class="bg-white mb-5 pb-5 px-4 shadow-lg text-center topp" style="width: 46%;margin-top: 25px;">
+        <div class="bg-white mb-5 pb-5 px-4 shadow-lg text-center topp" style="width: 96%;margin-top: 25px;">
             <p class="border-bottom fw-bold mb-0 p-2">Level 3</p>
           <div class="border-0 d-flex gap-5 justify-content-between lh-1 mt-3 py-3 text-start topp">
             <div class="w-50 text-start" >
