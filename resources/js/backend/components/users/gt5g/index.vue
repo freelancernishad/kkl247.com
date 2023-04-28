@@ -32,11 +32,11 @@
 
         </header>
 
-
+<!--
         <div class="d-flex marquee">
             <marquee>{{ settings.notice }}</marquee>
             <span>Notice</span>
-        </div>
+        </div> -->
 
 
 
@@ -87,7 +87,7 @@
                         <p style=" margin: 0;font-weight: 500;color: rgb(102, 102, 102);">validity period</p>
                         <p style=" margin: 0;font-weight: 500;color: rgb(102, 102, 102);">{{ packag.packageDuration }}</p>
                     </div>
-                    <button class="btn fw-bold rounded-0 text-white w-100 defaltColorBg" style="background-color: #0036ca;" @click="upgrade(packag)">Upgrade Now</button>
+                    <button class="btn fw-bold rounded-0 text-white w-100 defaltColorBg" style="background-color: #0036ca;" @click="upgrade(packag)">Investment Now</button>
                     </div>
                 </div>
             </div>
@@ -100,6 +100,16 @@
 
 
     </main>
+
+    <div class="noticePopup" v-if="noticePop">
+    <div class="popcontiner">
+
+        <div class="PopHead"><span @click="noticePop=false">X</span></div>
+        <div class="nPopBody" v-html="settings.popupNotice"></div>
+    </div>
+  </div>
+
+
 
     <Popups :PackPurchase="PackPurchase" :Title="PopupTitle" @event-close="ClosePopup" @event-submit="purchaseComplete"/>
     <Preload :Isactive="isActive"/>
@@ -116,6 +126,7 @@
 export default {
     data(){
         return {
+            noticePop:true,
             isActive:false,
             PackPurchase:false,
             Messageactive:false,
@@ -229,5 +240,47 @@ export default {
 }
 .homeIcon p {
     font-size: 13px;
+}
+
+
+
+
+
+.noticePopup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #000000b5;
+    height: 100%;
+    z-index: 99;
+}
+.popcontiner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #ffffff00;
+    width: 300px;
+    max-width: 300px;
+}
+
+.PopHead {
+    color: white;
+    text-align: right;
+    padding: 0 11px;
+    margin-bottom: 5px;
+}
+
+.nPopBody {
+    background: white;
+    padding: 11px 6px;
+    border-radius: 11px;
+}
+.PopHead span {
+    padding: 3px 6px;
+    background: #f30707c2;
+    border-radius: 50%;
+    cursor: pointer;
 }
 </style>

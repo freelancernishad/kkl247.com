@@ -28,7 +28,7 @@
                         <p style=" margin: 0;font-weight: 500;color: rgb(102, 102, 102);">validity period</p>
                         <p style=" margin: 0;font-weight: 500;color: rgb(102, 102, 102);">{{ packag.packageDuration }}</p>
                     </div>
-                    <button class="btn fw-bold rounded-0 text-white w-100 defaltColorBg" style="background-color: #0036ca;" @click="upgrade(packag)">Upgrade Now</button>
+                    <button class="btn fw-bold rounded-0 text-white w-100 defaltColorBg" style="background-color: #0036ca;" @click="upgrade(packag)">Investment Now</button>
                     </div>
                 </div>
             </div>

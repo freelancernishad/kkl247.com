@@ -32,16 +32,19 @@
 
     <div class="d-flex justify-content-around bg-white mx-4 my-3 shadow-lg py-4 ">
 
-        <router-link :to="{name:'Recharge'}" class="recharge-flex defaltColor">
-            <!-- <img :src="$asseturl+'img/11111.png'" alt=""> -->
-            <i class="fa-solid fa-bolt" style="    font-size: 25px;"></i>
-            <p class="mb-0">Recharge</p>
-        </router-link>
+
         <router-link :to="{name:'withdraw'}" class="recharge-flex defaltColor">
             <!-- <img :src="$asseturl+'img/11111.png'" alt=""> -->
             <i class="fa-solid fa-arrow-up-from-bracket" style="    font-size: 25px;"></i>
             <p class="mb-0">Withdrawal</p>
         </router-link>
+
+        <router-link :to="{name:'Recharge'}" class="recharge-flex defaltColor">
+            <!-- <img :src="$asseturl+'img/11111.png'" alt=""> -->
+            <i class="fa-solid fa-bolt" style="    font-size: 25px;"></i>
+            <p class="mb-0">Recharge</p>
+        </router-link>
+
         <!-- <router-link :to="{name:'treasure'}" class="recharge-flex defaltColor">
             <img :src="$asseturl+'img/11111.png'" alt="">
             <p class="mb-0">Treasure</p>
@@ -54,7 +57,7 @@
 <div class="mx-4 my-3 py-2 shadow-lg rounded-3 defaltColorBg ">
     <router-link :to="{name:'banlance'}" class="mx-3 whiteColor">
         <!-- <img :src="$asseturl+'img/book.126a5a8e.png'" alt=""> -->
-        <i class="fa-regular fa-rectangle-list"></i>
+        <i class="fal fa-box-usd"></i>
         <p class="d-inline fw-bold mb-0 ms-1">Balance Record</p>
     </router-link>
 </div>
@@ -62,7 +65,7 @@
 <div class="mx-4 my-3 py-2 shadow-lg rounded-3 defaltColorBg ">
     <router-link :to="{name:'peraccpass'}"  class="mx-3 whiteColor">
                 <!-- <img :src="$asseturl+'img/book.126a5a8e.png'" alt=""> -->
-        <i class="fa-regular fa-rectangle-list"></i>
+                <i class="fas fa-users-cog"></i>
         <p class="d-inline fw-bold mb-0 ms-1">Personal</p>
     </router-link>
 
@@ -70,7 +73,7 @@
 <div class="mx-4 my-3 py-2 shadow-lg rounded-3 defaltColorBg ">
     <router-link :to="{name:'RechargeRecord'}"  class="mx-3 whiteColor">
                 <!-- <img :src="$asseturl+'img/book.126a5a8e.png'" alt=""> -->
-        <i class="fa-regular fa-rectangle-list"></i>
+                <i class="fas fa-file-invoice-dollar"></i>
         <p class="d-inline fw-bold mb-0 ms-1">Recharge Record</p>
     </router-link>
 
@@ -78,7 +81,7 @@
 <div class="mx-4 my-3 py-2 shadow-lg rounded-3 defaltColorBg ">
     <router-link :to="{name:'WithdrawalRecord'}"  class="mx-3 whiteColor">
                 <!-- <img :src="$asseturl+'img/book.126a5a8e.png'" alt=""> -->
-        <i class="fa-regular fa-rectangle-list"></i>
+                <i class="fas fa-file-invoice-dollar"></i>
         <p class="d-inline fw-bold mb-0 ms-1">Withdrawal Record</p>
     </router-link>
 
@@ -87,14 +90,14 @@
 <div class="mx-4 my-3 py-2 shadow-lg rounded-3 defaltColorBg ">
     <router-link :to="{name:'aboutus'}"  class="mx-3 whiteColor">
                 <!-- <img :src="$asseturl+'img/book.126a5a8e.png'" alt=""> -->
-        <i class="fa-regular fa-rectangle-list"></i>
+        <i class="fas fa-address-card"></i>
         <p class="d-inline fw-bold mb-0 ms-1">About Us</p>
     </router-link>
 </div>
 <div class="mx-4 my-3 py-2 shadow-lg rounded-3 defaltColorBg ">
     <router-link :to="{name:'share'}"  class="mx-3 whiteColor">
                 <!-- <img :src="$asseturl+'img/book.126a5a8e.png'" alt=""> -->
-        <i class="fa-regular fa-rectangle-list"></i>
+        <i class="fas fa-share"></i>
         <p class="d-inline fw-bold mb-0 ms-1">Invite</p>
     </router-link>
 </div>
@@ -102,7 +105,7 @@
 <div class="mx-4 my-3 py-2 shadow-lg rounded-3 defaltColorBg ">
     <a :href="$asseturl+'SUN_ENERGY.apk'"  class="mx-3 whiteColor">
                 <!-- <img :src="$asseturl+'img/book.126a5a8e.png'" alt=""> -->
-        <i class="fa-regular fa-rectangle-list"></i>
+        <i class="fas fa-download"></i>
         <p class="d-inline fw-bold mb-0 ms-1">Download APP</p>
     </a>
 
@@ -111,7 +114,7 @@
 
 <div v-if="settings.telegroup" class="mx-4 my-3 py-2 shadow-lg rounded-3 defaltColorBg ">
     <a :href="settings.telegroup"  class="mx-3 whiteColor">
-        <i class="fa-regular fa-rectangle-list"></i>
+        <i class="fab fa-telegram"></i>
         <p class="d-inline fw-bold mb-0 ms-1">Official Telegram Group</p>
     </a>
 </div>
@@ -119,7 +122,7 @@
 
 <div v-if="settings.telesupport1" class="mx-4 my-3 py-2 shadow-lg rounded-3 defaltColorBg ">
     <a :href="settings.telesupport1"  class="mx-3 whiteColor">
-        <i class="fa-regular fa-rectangle-list"></i>
+        <i class="fab fa-telegram"></i>
         <p class="d-inline fw-bold mb-0 ms-1">Official Telegram Channel</p>
     </a>
 </div>
@@ -127,7 +130,7 @@
 
 <div v-if="settings.telesupport2" class="mx-4 my-3 py-2 shadow-lg rounded-3 defaltColorBg ">
     <a :href="settings.telesupport2"  class="mx-3 whiteColor">
-        <i class="fa-regular fa-rectangle-list"></i>
+        <i class="fas fa-user-headset"></i>
         <p class="d-inline fw-bold mb-0 ms-1">Customer Service</p>
     </a>
 </div>
@@ -135,7 +138,7 @@
 
 <div v-if="settings.telesupport3" class="mx-4 my-3 py-2 shadow-lg rounded-3 defaltColorBg ">
     <a :href="settings.telesupport3"  class="mx-3 whiteColor">
-        <i class="fa-regular fa-rectangle-list"></i>
+        <i class="fas fa-user-headset"></i>
         <p class="d-inline fw-bold mb-0 ms-1">Customer Service</p>
     </a>
 </div>

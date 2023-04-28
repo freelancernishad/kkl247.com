@@ -25,6 +25,15 @@
 
                                     <div class="col-md-12">
                                         <div class="form-group">
+                                            <label for="">Poup Notice</label>
+                                            <vue-editor v-model="form.popupNotice" />
+
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
                                             <label for="">Notice</label>
                                             <!-- <vue-editor v-model="form.notice"></vue-editor> -->
                                             <textarea v-model="form.notice" class="form-control" style="resize:none;height:100px;border: 1px solid #262528;"> </textarea>
@@ -131,7 +140,7 @@
                                         </div>
                                     </div>
 
-<!--
+
                                     <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="control-label col-form-label">Slider 1
@@ -184,7 +193,7 @@
                                             <b-img thumbnail fluid :src="form.slide4" alt="Image 3"></b-img>
                                             </label>
                                     </div>
-                                </div> -->
+                                </div>
 
 
                                     <div class="col-md-6">
@@ -232,6 +241,7 @@ export default {
     },data() {
         return {
             form:{
+                popupNotice:'',
                 notice:'',
                 new_regitration:'',
                 refer_bonus:'',

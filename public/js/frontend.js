@@ -2573,71 +2573,78 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       var _this6 = this;
 
       return _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee6() {
+        var otpcheck;
         return _regeneratorRuntime().wrap(function _callee6$(_context6) {
           while (1) {
             switch (_context6.prev = _context6.next) {
               case 0:
-                _this6.isActive = true; // var otpcheck = await this.callApi('post',`/api/check/otp?mobile=${this.form.mobile}&otp=${this.otp}`,[]);
-                // if(otpcheck.data==0){
-                //     this.isActive = false
-                //     this.notifiyGlobal("Otp does not match!");
-                // }else{
-                // if(localStorage.getItem('dmdevice')){
-                //     this.notifiyGlobal(`This device has already have an account!`);
-                // }else{
+                _this6.isActive = true;
+                _context6.next = 3;
+                return _this6.callApi('post', "/api/check/otp?mobile=".concat(_this6.form.mobile, "&otp=").concat(_this6.otp), []);
 
-                if (_this6.genaratedCaptcha === Number(_this6.captcha)) {
-                  // if(this.usernameMatch!=2){
-                  // this.notifiyGlobal('please Enter deferent username');
-                  // }else{
-                  if (_this6.refer != 1) {
-                    _this6.notifiyGlobal("Opps,Refer code is Invalid");
-                  } else {
-                    // if (this.form.password === this.form.password_confirmation) {
-                    axios.post("api/auth/register", _this6.form).then(function (res) {
-                      _this6.isActive = false;
+              case 3:
+                otpcheck = _context6.sent;
 
-                      if (res.data == 422) {
-                        _this6.notifiyGlobal("This Phone Number Already Exist");
-                      } else if (res.data == 444) {
-                        _this6.notifiyGlobal("This device has already have an account!");
-
-                        localStorage.setItem("dmdevice", 1);
-                      } else {
-                        // console.log(res)
-                        if (res.status == 201) {
-                          _this6.notifiyGlobal("Registration Success");
-
-                          localStorage.setItem("dmdevice", 1);
-
-                          _this6.$router.push({
-                            name: "/login"
-                          });
-                        } else {
-                          _this6.notifiyGlobal("Something want wrong. Please Try again or contact with admin");
-                        } // User.responseAfterLogin(res)
-
-                      } // console.log(res.data)
-                      // User.responseAfterLogin(res)
-
-                    })["catch"](function (error) {
-                      return _this6.errors = error.response.data.errors;
-                    }); // } else {
-                    //     this.notifiyGlobal(
-                    //         "Password and Confirm password does not match"
-                    //     );
-                    // }
-                  } // }
-
-                } else {
+                if (otpcheck.data == 0) {
                   _this6.isActive = false;
 
-                  _this6.notifiyGlobal("Captcha does not match!");
-                } // }
-                // }
+                  _this6.notifiyGlobal("Otp does not match!");
+                } else {
+                  // if(localStorage.getItem('dmdevice')){
+                  //     this.notifiyGlobal(`This device has already have an account!`);
+                  // }else{
+                  if (_this6.genaratedCaptcha === Number(_this6.captcha)) {
+                    // if(this.usernameMatch!=2){
+                    // this.notifiyGlobal('please Enter deferent username');
+                    // }else{
+                    if (_this6.refer != 1) {
+                      _this6.notifiyGlobal("Opps,Refer code is Invalid");
+                    } else {
+                      // if (this.form.password === this.form.password_confirmation) {
+                      axios.post("api/auth/register", _this6.form).then(function (res) {
+                        _this6.isActive = false;
 
+                        if (res.data == 422) {
+                          _this6.notifiyGlobal("This Phone Number Already Exist");
+                        } else if (res.data == 444) {
+                          _this6.notifiyGlobal("This device has already have an account!");
 
-              case 2:
+                          localStorage.setItem("dmdevice", 1);
+                        } else {
+                          // console.log(res)
+                          if (res.status == 201) {
+                            _this6.notifiyGlobal("Registration Success");
+
+                            localStorage.setItem("dmdevice", 1);
+
+                            _this6.$router.push({
+                              name: "/login"
+                            });
+                          } else {
+                            _this6.notifiyGlobal("Something want wrong. Please Try again or contact with admin");
+                          } // User.responseAfterLogin(res)
+
+                        } // console.log(res.data)
+                        // User.responseAfterLogin(res)
+
+                      })["catch"](function (error) {
+                        return _this6.errors = error.response.data.errors;
+                      }); // } else {
+                      //     this.notifiyGlobal(
+                      //         "Password and Confirm password does not match"
+                      //     );
+                      // }
+                    } // }
+
+                  } else {
+                    _this6.isActive = false;
+
+                    _this6.notifiyGlobal("Captcha does not match!");
+                  } // }
+
+                }
+
+              case 5:
               case "end":
                 return _context6.stop();
             }
@@ -3319,6 +3326,60 @@ var render = function render() {
       }
     }
   })]), _vm._v(" "), _c("div", {
+    staticClass: "d-flex gap-5"
+  }, [_c("div", {
+    staticClass: "flex-nowrap input-group px-3"
+  }, [_c("span", {
+    staticClass: "input-group-text rounded-0 borderleft",
+    attrs: {
+      id: "addon-wrapping"
+    }
+  }, [_c("img", {
+    staticClass: "icon",
+    attrs: {
+      src: _vm.$asseturl + "img/download.png"
+    }
+  })]), _vm._v(" "), _c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.otp,
+      expression: "otp"
+    }],
+    staticClass: "form-control rounded-0 borderright",
+    attrs: {
+      type: "text",
+      placeholder: "SMS Code",
+      "aria-label": "Username",
+      "aria-describedby": "addon-wrapping",
+      required: ""
+    },
+    domProps: {
+      value: _vm.otp
+    },
+    on: {
+      input: function input($event) {
+        if ($event.target.composing) return;
+        _vm.otp = $event.target.value;
+      }
+    }
+  })]), _vm._v(" "), _c("div", {
+    staticClass: "w-100"
+  }, [_c("button", {
+    staticClass: "btn fw-bold rounded-0",
+    staticStyle: {
+      background: "#f1f1f1",
+      color: "#333",
+      border: "2px solid var(--defaltColor)",
+      width: "93%"
+    },
+    attrs: {
+      type: "button"
+    },
+    on: {
+      click: _vm.sentOtp
+    }
+  }, [_vm._v(_vm._s(_vm.otpsent))])])]), _vm._v(" "), _c("div", {
     staticClass: "d-flex gap-5 pt-3"
   }, [_c("div", {
     staticClass: "flex-nowrap input-group px-3"

@@ -131,7 +131,7 @@ export default {
 }
 .cotent .on {
     text-align: center;
-    background-color: #0036ca;
+    background-color: #000000;
     width: 120px;
     height: 22px;
     line-height: 22px;
