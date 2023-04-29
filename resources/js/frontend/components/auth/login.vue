@@ -8,7 +8,7 @@
         <h2 style="font-size: 60px;
     font-weight: bolder;
     font-family: math;
-    color: var(--defaltColor);">SUN ENERGY</h2>
+    color: var(--defaltColor);">KKR</h2>
         <p class="fw-bold mb-0 py-2">Welcome to login</p>
     </div>
 

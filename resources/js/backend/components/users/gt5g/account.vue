@@ -4,7 +4,7 @@
 
     <main class="main-bg-absulate" style="background-image: url(/img/earnings.png);">
 
-<div class=" bg-white mx-4 px-4 shadow-lg">
+<div class=" bg-white mx-4 px-2 shadow-lg">
     <div class="d-flex gap-4 justify-content-between ms-0 py-1 w-50 pb-3">
         <div>
             <img width="90px" :src="$asseturl+'img/logo.jpg'" alt="">
@@ -30,7 +30,7 @@
 
     </div>
 
-    <div class="d-flex justify-content-around bg-white mx-4 my-3 shadow-lg py-4 ">
+    <div class="d-flex justify-content-between py-4 ">
 
 
         <router-link :to="{name:'withdraw'}" class="recharge-flex defaltColor">

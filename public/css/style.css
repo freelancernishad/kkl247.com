@@ -158,21 +158,21 @@ th {
     font-size: 14px;
     text-align: center;
     padding: 3px;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 td {
-
-    border: 1px solid white;
-    background: #2661B1;
+    border: 1px solid black;
+    background: #ffffff;
     text-align: center;
     font-size: 10px;
+    color: black;
 }
 
 thead {
-    background: #6B5CA1;
+    background: #000000;
 }
 .bg-gdd {
     background: rgb(19,242,255);
-    background: linear-gradient(180deg, #fff113 0%, rgb(36 205 102) 45%, rgb(255 183 138) 100%);
+    background: linear-gradient(180deg, #EC1D25 0%, rgb(0 0 0) 45%, #f97277 100%);
 
 }

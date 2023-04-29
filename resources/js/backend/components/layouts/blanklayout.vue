@@ -97,7 +97,7 @@
 
     created() {
                 this.createlink('frontend/css/bootstrap.min.css');
-        this.createlink('css/style.css?ver=1.0.3');
+        this.createlink('css/style.css?ver=1.0.0');
         this.createlink('frontend/css/font-awesome.min.css');
 
         this.createscript('frontend/js/bootstrap.bundle.min.js');

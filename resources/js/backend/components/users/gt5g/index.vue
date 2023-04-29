@@ -267,7 +267,7 @@ export default {
 
 .PopHead {
     color: white;
-    text-align: right;
+    text-align: left;
     padding: 0 11px;
     margin-bottom: 5px;
 }
