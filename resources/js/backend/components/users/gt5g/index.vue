@@ -77,15 +77,15 @@
 
                     <div class="d-flex justify-content-between  p-1">
                         <p style=" margin: 0;font-weight: 500;color: rgb(102, 102, 102);">Invest Price</p>
-                        <p style=" margin: 0;font-weight: 500;color: #666666;">{{ packag.packagePrice }}</p>
+                        <p style=" margin: 0;font-weight: 500;color: #666666;">{{ packag.packagePrice }} Bdt</p>
                     </div>
                     <div class="d-flex justify-content-between p-1">
                         <p style=" margin: 0;font-weight: 500;color: #666666;">Day Income:</p>
-                        <p style=" margin: 0;font-weight: 500;color: var(--defaltColor);">{{ packag.packageEarn }}</p>
+                        <p style=" margin: 0;font-weight: 500;color: var(--defaltColor);">{{ packag.packageEarn }} Bdt</p>
                     </div>
                     <div class="d-flex justify-content-between  p-1">
                         <p style=" margin: 0;font-weight: 500;color: rgb(102, 102, 102);">validity period</p>
-                        <p style=" margin: 0;font-weight: 500;color: rgb(102, 102, 102);">{{ packag.packageDuration }}</p>
+                        <p style=" margin: 0;font-weight: 500;color: rgb(102, 102, 102);">{{ packag.packageDuration }} Days</p>
                     </div>
                     <button class="btn fw-bold rounded-0 text-white w-100 defaltColorBg" style="background-color: #0036ca;" @click="upgrade(packag)">Investment Now</button>
                     </div>

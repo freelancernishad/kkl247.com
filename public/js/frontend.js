@@ -2279,7 +2279,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
             _this3.isActive = false;
 
-            _this3.notifiyGlobal('Signed in successfully Complete'); // this.$router.push({name: 'home'})
+            _this3.notifiyGlobal('Login Success'); // this.$router.push({name: 'home'})
             // window.location.href = '/dashboard'
 
           }

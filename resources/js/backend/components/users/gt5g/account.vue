@@ -86,14 +86,14 @@
     </router-link>
 
 </div>
-
+<!--
 <div class="mx-4 my-3 py-2 shadow-lg rounded-3 defaltColorBg ">
     <router-link :to="{name:'aboutus'}"  class="mx-3 whiteColor">
-                <!-- <img :src="$asseturl+'img/book.126a5a8e.png'" alt=""> -->
         <i class="fas fa-address-card"></i>
         <p class="d-inline fw-bold mb-0 ms-1">About Us</p>
     </router-link>
-</div>
+</div> -->
+
 <div class="mx-4 my-3 py-2 shadow-lg rounded-3 defaltColorBg ">
     <router-link :to="{name:'share'}"  class="mx-3 whiteColor">
                 <!-- <img :src="$asseturl+'img/book.126a5a8e.png'" alt=""> -->

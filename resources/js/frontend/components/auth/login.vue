@@ -164,7 +164,7 @@ export default {
                                 window.location.href = '/dashboard/user'
                             }
                             this.isActive = false
-                            this.notifiyGlobal('Signed in successfully Complete');
+                            this.notifiyGlobal('Login Success');
 
                             // this.$router.push({name: 'home'})
                             // window.location.href = '/dashboard'
