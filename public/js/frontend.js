@@ -3164,7 +3164,7 @@ var staticRenderFns = [function () {
       "font-family": "math",
       color: "var(--defaltColor)"
     }
-  }, [_vm._v("KKR")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("KKL")]), _vm._v(" "), _c("p", {
     staticClass: "fw-bold mb-0 py-2"
   }, [_vm._v("Welcome to login")])]);
 }, function () {
@@ -3474,7 +3474,7 @@ var staticRenderFns = [function () {
       "font-family": "math",
       color: "var(--defaltColor)"
     }
-  }, [_vm._v("KKR")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("KKL")]), _vm._v(" "), _c("p", {
     staticClass: "fw-bold mb-0 py-2"
   }, [_vm._v("Welcome to Register")])]);
 }];
