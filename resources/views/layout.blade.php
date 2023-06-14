@@ -6,7 +6,7 @@
     <title>kkl earn money</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('sun.jpg') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('img/logo.jpg') }}">
     {{-- <link rel="stylesheet" href="{{ asset('dashboard_asset/css/all.min.css') }}"> --}}
 
     <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v6.4.0/css/pro.min.css" />
