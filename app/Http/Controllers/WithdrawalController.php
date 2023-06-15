@@ -95,8 +95,6 @@ class WithdrawalController extends Controller
 
         if($dpcount>0){
 
-
-
         $data = $request->all();
 
         $userid = $request->user_id;

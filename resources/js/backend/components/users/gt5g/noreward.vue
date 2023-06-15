@@ -1,8 +1,8 @@
 <template>
     <div>
-        <header class="header-text mb-5 defaltColorBg" style="margin-bottom: -16px !important;">
+        <!-- <header class="header-text mb-5 defaltColorBg" style="margin-bottom: -16px !important;">
         <p class="py-2 text-white"> Mobil Incentive Rules </p>
-    </header>
+    </header> -->
     <main class="mb-5 pb-5">
         <div>
 
@@ -20,7 +20,7 @@
             <div class="bg-gds p-3  text-white">
                 <p class="fs-4 fw-bold text-center text-dark">KKR Investment Program
                 </p>
-                <div class="bg-gdd p-3 rounded-1">
+                <div class="bg-gddd p-3 rounded-1">
                     <table style="width: 100%;">
                         <thead>
                             <tr>
@@ -70,7 +70,7 @@ If your TA 3 members earn 100 per day, you get 2% of 100 per day. to it. If your
                 <div class="bg-gds p-3  text-white">
                     <p class="fs-4 fw-bold text-center text-dark">KKR Team Commission Program
                     </p>
-                    <div class="bg-gdd p-3 rounded-1">
+                    <div class="bg-gddd p-3 rounded-1">
                         <table style="width: 100%;">
                             <thead>
                                 <tr>
@@ -113,11 +113,11 @@ If your TA 3 members earn 100 per day, you get 2% of 100 per day. to it. If your
         </div>
         <div class="px-3">
 
-            <p class="mt-3">When your Team 1/2/3 team members invest, you will directly earn 10% 4% 2% return on their investment.</p>
+            <!-- <p class="mt-3">When your Team 1/2/3 team members invest, you will directly earn 10% 4% 2% return on their investment.</p>
             <p class="mt-3">If your Team 1 member earns $100 per day, you will receive 6% of the 100 per day.</p>
             <p class="mt-3">If your Team 2 member earns $100 per day, you will receive 3% of the 100 per day.</p>
             <p class="mt-3">If your Team 3 member earns $100 per day, you will receive 2% of the 100 per day. etc</p>
-            <p>If you have 100/500/1000 member investment in your team, it will be a long term benefit for you to get bonus from the company. thank you</p>
+            <p>If you have 100/500/1000 member investment in your team, it will be a long term benefit for you to get bonus from the company. thank you</p> -->
 
 
 
@@ -153,3 +153,9 @@ export default {
     },
 }
 </script>
+
+<style>
+.bg-gddd {
+    background: rgb(19,242,255) !important;
+}
+</style>
