@@ -5,19 +5,16 @@
 
     <main>
 
-<!--
+
         <header>
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img :src="$asseturl+'img/sl1.jpeg'" class="d-block w-100" alt="Slide 1">
+                        <img :src="$asseturl+'img/s1.jpg'" class="d-block w-100" alt="Slide 1">
                     </div>
                     <div class="carousel-item">
-                        <img :src="$asseturl+'img/sl2.jpeg'" class="d-block w-100" alt="Slide 2">
-                    </div>
-                    <div class="carousel-item">
-                        <img :src="$asseturl+'img/sl3.jpeg'" class="d-block w-100" alt="Slide 2">
+                        <img :src="$asseturl+'img/s2.jpg'" class="d-block w-100" alt="Slide 2">
                     </div>
                 </div>
 
@@ -32,7 +29,7 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-        </header> -->
+        </header>
 
 
 

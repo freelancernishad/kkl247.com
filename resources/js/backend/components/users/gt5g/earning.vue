@@ -6,12 +6,26 @@
 
         <main class="main-bg-absulate">
             <div class="bg-white mx-4 shadow-lg text-center">
-                <p class="fs-6 mb-0 py-2">Receiveable Income</p>
-                <p class="fw-bold defaltColor">৳{{ earndata.user.receiveable }}</p>
-                <button class="btn fw-bold mb-4 mt-2 rounded-0 text-white w-75 defaltColorBg" @click="orderSubmit"
-                   >
-                    Receive
-                </button>
+                <div v-if="earndata.user.receiveable">
+                    <p class="fs-6 mb-0 py-2">Receiveable Income</p>
+                    <p class="fw-bold defaltColor">৳{{ earndata.user.receiveable }}</p>
+                    <button class="btn fw-bold mb-4 mt-2 rounded-0 text-white w-75 defaltColorBg" @click="orderSubmit">Receive</button>
+                </div>
+                <div v-else>
+                    <h3 class="text-center">Next Receiveable Time</h3>
+                    <div class="d-flex align-items-center justify-content-center">
+                    <div class="d-flex align-items-center countingNext" style="grid-gap:10px">
+                        <p class="btn btn-info text-white">{{ hours }}</p>
+                        <p style="font-size: 15px;font-weight: 600;">:</p>
+                        <p class="btn btn-info text-white">{{ minutes }}</p>
+                        <p style="font-size: 15px;font-weight: 600;">:</p>
+                        <p class="btn btn-info text-white">{{ seconds }}</p>
+                    </div>
+                </div>
+            </div>
+
+
+
             </div>
 
 
@@ -68,6 +82,17 @@ export default {
             earndata: {user:{eceiveable:0}},
             form: {},
             lists: {},
+
+
+
+            countdownDate: new Date(), // Set your target date here
+            countdownInterval: null,
+            days: 0,
+            hours: 0,
+            minutes: 0,
+            seconds: 0
+
+
         };
     },
     methods: {
@@ -114,9 +139,55 @@ export default {
             }
             this.getdata();
         },
+
+
+        startCountdown() {
+        this.countdownInterval = setInterval(() => {
+
+
+
+            // Set the time to 23:59:00
+            this.countdownDate.setHours(23);
+            this.countdownDate.setMinutes(59);
+            this.countdownDate.setSeconds(0);
+            this.countdownDate.setMilliseconds(0);
+
+
+
+
+            const now = new Date().getTime();
+            const distance = this.countdownDate - now;
+
+            this.days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            this.hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            this.minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            this.seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            if (distance < 0) {
+            // Countdown is finished
+            clearInterval(this.countdownInterval);
+            this.days = 0;
+            this.hours = 0;
+            this.minutes = 0;
+            this.seconds = 0;
+            }
+        }, 1000); // Update the countdown every second
+        }
+
+
+
+
+
+
+
+
     },
+    beforeUnmount() {
+    clearInterval(this.countdownInterval);
+  },
     mounted() {
         this.getdata();
+        this.startCountdown();
     },
 };
 </script>
