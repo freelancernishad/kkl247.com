@@ -20,8 +20,8 @@
 <section class="fw-bold mt-3 mx-3">
     <div class="grid-container">
         <p class="bg-white py-3 shadow text-center w-100" :class="{ 'active':form.amount == 500 }" @click="form.amount = 500">৳500</p>
-        <p class="bg-white py-3 shadow text-center w-100" :class="{ 'active':form.amount == 1000 }" @click="form.amount = 1000">৳1000</p>
-        <p class="bg-white py-3 shadow text-center w-100" :class="{ 'active':form.amount == 2500 }" @click="form.amount = 2500">৳2500</p>
+        <p class="bg-white py-3 shadow text-center w-100" :class="{ 'active':form.amount == 1100 }" @click="form.amount = 1100">৳1100</p>
+        <p class="bg-white py-3 shadow text-center w-100" :class="{ 'active':form.amount == 2600 }" @click="form.amount = 2600">৳2600</p>
         <p class="bg-white py-3 shadow text-center w-100" :class="{ 'active':form.amount == 6000 }" @click="form.amount = 6000">৳6000</p>
         <p class="bg-white py-3 shadow text-center w-100" :class="{ 'active':form.amount == 10000 }" @click="form.amount = 10000">৳10000</p>
         <p class="bg-white py-3 shadow text-center w-100" :class="{ 'active':form.amount == 16000 }" @click="form.amount = 16000">৳16000</p>
