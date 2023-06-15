@@ -6,7 +6,7 @@
 
         <main class="main-bg-absulate">
             <div class="bg-white mx-4 shadow-lg text-center">
-                <div v-if="earndata.user.receiveable">
+                <div v-if="earndata.user.receiveable>0">
                     <p class="fs-6 mb-0 py-2">Receiveable Income</p>
                     <p class="fw-bold defaltColor">৳{{ earndata.user.receiveable }}</p>
                     <button class="btn fw-bold mb-4 mt-2 rounded-0 text-white w-75 defaltColorBg" @click="orderSubmit">Receive</button>
