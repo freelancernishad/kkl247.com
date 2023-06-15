@@ -103,7 +103,7 @@
 </div>
 
 <div class="mx-4 my-3 py-2 shadow-lg rounded-3 defaltColorBg ">
-    <a :href="$asseturl+'SUN_ENERGY.apk'"  class="mx-3 whiteColor">
+    <a :href="$asseturl+'kkl.apk'"  class="mx-3 whiteColor">
                 <!-- <img :src="$asseturl+'img/book.126a5a8e.png'" alt=""> -->
         <i class="fas fa-download"></i>
         <p class="d-inline fw-bold mb-0 ms-1">Download APP</p>

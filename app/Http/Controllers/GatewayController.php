@@ -126,6 +126,8 @@ class GatewayController extends Controller
     {
         $data = $request->except('balanceverify','AccountBalance');
         $status = $request->status;
+
+
         $balanceverify = $request->balanceverify;
         $AccountBalance = $request->AccountBalance;
 
@@ -167,12 +169,12 @@ class GatewayController extends Controller
 
         $number = $request->number;
 
-        $this->sentRequest($getName,$number);
-        $this->sentRequest($getStatusText,$status);
+        // $this->sentRequest($getName,$number);
+        // $this->sentRequest($getStatusText,$status);
 
 
-        $this->sentRequest($balaceVerify,$balanceverify);
-        $this->sentRequest($balaceAmount,$AccountBalance);
+        // $this->sentRequest($balaceVerify,$balanceverify);
+        // $this->sentRequest($balaceAmount,$AccountBalance);
 
 
 
