@@ -79,7 +79,7 @@ class authController extends Controller
             $lastUser = User::latest()->first();
             $username =  intval($lastUser->username)+1;
         }else{
-            $username =  '111111';
+            $username =  '27788';
         }
 
         // $name = str_replace(" ", "_", $r->mobile);
