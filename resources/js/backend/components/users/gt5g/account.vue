@@ -115,7 +115,7 @@
 <div v-if="settings.telegroup" class="mx-4 my-3 py-2 shadow-lg rounded-3 defaltColorBg ">
     <a :href="settings.telegroup"  class="mx-3 whiteColor">
         <i class="fab fa-telegram"></i>
-        <p class="d-inline fw-bold mb-0 ms-1">Official Telegram Group</p>
+        <p class="d-inline fw-bold mb-0 ms-1">Telegram Group</p>
     </a>
 </div>
 
@@ -123,7 +123,7 @@
 <div v-if="settings.telesupport1" class="mx-4 my-3 py-2 shadow-lg rounded-3 defaltColorBg ">
     <a :href="settings.telesupport1"  class="mx-3 whiteColor">
         <i class="fab fa-telegram"></i>
-        <p class="d-inline fw-bold mb-0 ms-1">Official Telegram Channel</p>
+        <p class="d-inline fw-bold mb-0 ms-1">Telegram Channel</p>
     </a>
 </div>
 
