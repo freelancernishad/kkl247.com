@@ -201,6 +201,8 @@ export default {
             this.isActive =false;
             if(res.data==1){
                 this.notifiyGlobal('Daily checked in completed')
+            }else if(res.data==404){
+                this.notifiyGlobal('You cant checked in')
             }else{
                 this.notifiyGlobal('Come Back Tomorrow')
             }

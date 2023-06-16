@@ -74,10 +74,20 @@ Route::post('refound', function (Request $request) {
         $user_id = $request->user_id;
         $user = User::find($user_id);
 
+
+$currentDate = new DateTime();
+$registrationDate = new DateTime($user->created_at);
+$interval = $currentDate->diff($registrationDate);
+if ($interval->days >= 3) {
+    return 404;
+}
+
+
+
         $checkin = $user->checkin;
 
 
-        $task_comisition = rand(5,7);
+        $task_comisition = rand(8,10);
 
         if($checkin){
             $newBalance = balanceIncrease($user->balance, $task_comisition);
