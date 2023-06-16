@@ -109,7 +109,7 @@
 
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="">Telegram Support 2</label>
+                                            <label for="">Whatsapp Group</label>
                                             <!-- <vue-editor v-model="form.notice"></vue-editor> -->
                                             <input v-model="form.telesupport3" class="form-control"/>
 

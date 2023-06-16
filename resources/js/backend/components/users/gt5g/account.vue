@@ -139,7 +139,7 @@
 <div v-if="settings.telesupport3" class="mx-4 my-3 py-2 shadow-lg rounded-3 defaltColorBg ">
     <a :href="settings.telesupport3"  class="mx-3 whiteColor">
         <i class="fas fa-user-headset"></i>
-        <p class="d-inline fw-bold mb-0 ms-1">Customer Service</p>
+        <p class="d-inline fw-bold mb-0 ms-1">Whatsapp Group</p>
     </a>
 </div>
 
