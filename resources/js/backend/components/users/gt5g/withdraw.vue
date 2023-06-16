@@ -104,19 +104,13 @@ export default {
 
         if(User.dateformat()[9]<=16){
             if(User.dateformat()[9]>=10){
-
-
             }else{
-                this.notifiy('প্রত্যাহার সময় সকাল ১০:০০ থেকে বিকাল ০৫:০০ টা পর্যন্ত')
-
-                this.$router.push({ name: 'Useraccount' });
-
-
+                alert('প্রত্যাহার সময় সকাল ১০:০০ থেকে বিকাল ০৫:০০ টা পর্যন্ত')
+                this.$router.push({ name: 'Authuser' });
             }
         }else{
-            this.notifiy('প্রত্যাহার সময় সকাল ১০:০০ থেকে বিকাল ০৫:০০ টা পর্যন্ত')
-            this.$router.push({ name: 'Useraccount' });
-
+            alert('প্রত্যাহার সময় সকাল ১০:০০ থেকে বিকাল ০৫:০০ টা পর্যন্ত')
+            this.$router.push({ name: 'Authuser' });
         }
     },
     data(){
