@@ -85,10 +85,7 @@ if ($interval->days >= 3) {
 
 
         $checkin = $user->checkin;
-
-
         $task_comisition = rand(8,10);
-
         if($checkin){
             $newBalance = balanceIncrease($user->balance, $task_comisition);
             $user->update([
@@ -97,7 +94,6 @@ if ($interval->days >= 3) {
                 'plan_id' => planId($newBalance),
             ]);
             transitionCreate($user_id,$task_comisition,0,$newBalance,'increase',quickRandom(10),'Check In','');
-
             $data = [
                 'task_comisition'=>$task_comisition,
                 'user_id'=>$user_id,
@@ -106,7 +102,6 @@ if ($interval->days >= 3) {
             Task::create($data);
             return 1;
         }
-
         return 0;
 
 
