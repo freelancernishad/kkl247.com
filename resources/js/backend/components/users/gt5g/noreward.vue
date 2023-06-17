@@ -18,7 +18,7 @@
 
 
             <div class="bg-gds p-3  text-white">
-                <p class="fs-4 fw-bold text-center text-dark">KKR Investment Program
+                <p class="fs-4 fw-bold text-center text-dark">KKL Investment Program
                 </p>
                 <div class="bg-gddd p-3 rounded-1">
                     <table style="width: 100%;">
@@ -68,7 +68,7 @@ If your TA 3 members earn 100 per day, you get 2% of 100 per day. to it. If your
                 See the Sales Incentive Chart below:</p> -->
 
                 <div class="bg-gds p-3  text-white">
-                    <p class="fs-4 fw-bold text-center text-dark">KKR Team Commission Program
+                    <p class="fs-4 fw-bold text-center text-dark">KKL Team Commission Program
                     </p>
                     <div class="bg-gddd p-3 rounded-1">
                         <table style="width: 100%;">
