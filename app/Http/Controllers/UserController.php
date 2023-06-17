@@ -331,7 +331,7 @@ public function referfunction($id)
         if($taskcc){
             Task::where(['user_id'=>$user->id])->latest()->take($taskcc)->delete();
         }
-        $data = $request->except(['password','balance','checkin','receiveable','mobile','ref_by','role','username','withdrawpass']);
+        $data = $request->except(['password','balance','checkin','receiveable','mobile','ref_by','role','username','withdrawpass','task']);
         if($request->password){
 
             $data['password'] = hash::make($request->password);
