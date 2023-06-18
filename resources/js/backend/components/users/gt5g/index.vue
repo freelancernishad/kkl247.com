@@ -87,7 +87,7 @@
 
 
         <section>
-            <video autoplay loop width="100%">
+            <video autoplay loop muted width="100%">
                 <source :src="$asseturl+'Video.mp4'" type="video/mp4">
             </video>
         </section>
