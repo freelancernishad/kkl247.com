@@ -86,6 +86,16 @@
 
 
 
+        <section>
+            <video autoplay loop width="100%">
+                <source :src="$asseturl+'Video.mp4'" type="video/mp4">
+            </video>
+        </section>
+
+
+
+
+
         <section class="">
             <div class="row">
                 <div class="col-6 col-md-6" v-for="packag in packages" :key="packag.id">

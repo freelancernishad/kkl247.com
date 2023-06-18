@@ -25,7 +25,7 @@
           <p class="pb-5 px-5 py-2">The app provides an exclusive link and an exclusive QR code, send it to your friends, and you will get a 10% rebate.</p>
         </div>
         <div class="bg-white mx-4 px-4  shadow-lg lh-1 mb-5">
-            <p class="border-bottom  py-2 topp text-center">Invite friends to register, each reward ৳5, total reward ৳500.</p>
+            <p class="border-bottom  py-2 topp text-center">Invite friends to register, each reward ৳5, total reward ৳100.</p>
 
             <div class="d-flex">
                 <div class="w-75">
@@ -34,7 +34,7 @@
                 </div>
                 <div class="w-25 text-end">
                     <button class="btn fw-bold  rounded-0 text-white " style="background-color: var(--defaltColor);"> <span v-if="row.user.refercount>20">Finished</span> <span v-else>Unfinished</span></button>
-                    <p class="m-0 me-3 defaltColor py-2">{{ row.refercount }} / 100</p>
+                    <p class="m-0 me-3 defaltColor py-2">{{ row.refercount }} / 20</p>
                 </div>
             </div>
         </div>

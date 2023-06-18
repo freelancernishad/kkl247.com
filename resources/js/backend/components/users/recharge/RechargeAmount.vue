@@ -19,6 +19,7 @@
     </main>
 <section class="fw-bold mt-3 mx-3">
     <div class="grid-container">
+        <p class="bg-white py-3 shadow text-center w-100" :class="{ 'active':form.amount == 400 }" @click="form.amount = 400">৳400</p>
         <p class="bg-white py-3 shadow text-center w-100" :class="{ 'active':form.amount == 500 }" @click="form.amount = 500">৳500</p>
         <p class="bg-white py-3 shadow text-center w-100" :class="{ 'active':form.amount == 1100 }" @click="form.amount = 1100">৳1100</p>
         <p class="bg-white py-3 shadow text-center w-100" :class="{ 'active':form.amount == 2600 }" @click="form.amount = 2600">৳2600</p>
